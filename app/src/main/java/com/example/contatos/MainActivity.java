@@ -19,10 +19,10 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     ListView listView;
-    String mNome[] = {"Alex Rese", "Julio Cesar", "Pablo Escobar"};
-    String mDescricao[] = {"Professor disciplinar", "Imperador Romano", "Produtor de drogas"};
+    String mNome[] = {"Alex Rese", "Anatielle T Gomes", "Julio Cesar", "Pablo Escobar", "Sigmund Freud", "Quentin Tarantino"};
+    String mDescricao[] = {"Professor disciplinar", "Psicóloga comercial", "Imperador Romano", "Produtor de drogas", "Responsável pela revolução no estudo da mente humana", "Diretor de filmes PoP"};
 
-    int images[] = {R.drawable.alex, R.drawable.julio, R.drawable.pablo};
+    int images[] = {R.drawable.alex, R.drawable.anatielle, R.drawable.julio, R.drawable.pablo, R.drawable.freud, R.drawable.tarantino};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,10 +41,19 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Alex", Toast.LENGTH_SHORT).show();
                 }
                 if (position == 1){
-                    Toast.makeText(MainActivity.this, "Julio", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Nati", Toast.LENGTH_SHORT).show();
                 }
                 if (position == 2){
+                    Toast.makeText(MainActivity.this, "Julio", Toast.LENGTH_SHORT).show();
+                }
+                if (position == 3){
                     Toast.makeText(MainActivity.this, "Pablo", Toast.LENGTH_SHORT).show();
+                }
+                if (position == 4){
+                    Toast.makeText(MainActivity.this, "Freud", Toast.LENGTH_SHORT).show();
+                }
+                if (position == 5){
+                    Toast.makeText(MainActivity.this, "Tarantino", Toast.LENGTH_SHORT).show();
                 }
             }
         });
